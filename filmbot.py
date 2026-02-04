@@ -17,8 +17,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Configuration (replace with your actual values)
-BOT_TOKEN = "8202361629:AAE_6dKzEoVjsgAfDl8muOkSL8FHGa4S_os"
-PRIVATE_CHANNEL_ID = -1002736031349  # Your private channel ID
+BOT_TOKEN = ""
+PRIVATE_CHANNEL_ID =   # Your private channel ID
 PUBLIC_CHANNEL = "https://t.me/fana_film_store"
 MOVIES_PER_PAGE = 8  # Number of movies to show per request
 
@@ -167,4 +167,5 @@ def main():
     application.run_polling()
 
 if __name__ == "__main__":
+
     main()
