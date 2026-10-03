@@ -1,0 +1,27 @@
+services:
+  - type: worker
+    name: youngmovies-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: TELEBIRR_NAME
+        sync: false
+      - key: TELEBIRR_ACCOUNT
+        sync: false
+      - key: CBE_NAME
+        sync: false
+      - key: CBE_ACCOUNT
+        sync: false
+      - key: BASIC_CHANNEL_LINK
+        sync: false
+      - key: VIP_CHANNEL_LINK
+        sync: false
+      - key: WELCOME_VIDEO_FILE_ID
+        sync: false
+      - key: DB_PATH
+        value: bot.sqlite3
